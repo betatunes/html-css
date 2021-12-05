@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo pseudo-classe</title>
+    <style>
+       .textmsg > p {
+           display: none;
+       }
+
+       .textmsg:hover > p {
+           display: block;
+           background-color: yellow;
+       }
+       .msgimage > p{
+           display: none;
+       }
+
+       .msgimage:hover > p{
+           display: block;
+        
+       }
+       
+    </style>
+</head>
+<body>
+   <h1>Conteúdo especial</h1>
+   <div class="textmsg">
+       Passe o mouse aqui
+       <p>SURPRESA!!</p>
+   </div>
+   <p>Veja o conteúdo oculto aparecendo!</p>
+
+   <h1>Novo Conteúdo</h1>
+   <div class="msgimage">
+       Passe o mouse aqui para ver a imagem
+       <p><img src="imagem/tours-maldivas.png" alt=""></p>
+   </div>
+   <p>Veja a imagem aparecendo</p>
+</body>
+</html>
